@@ -1,0 +1,277 @@
+@font-face {
+    font-family: 'Gotham Pro Light';
+    src: url('resources/fonts/GothamPro-Light.eot');
+    src: url('resources/fonts/GothamPro-Light.eot?#iefix') format('embedded-opentype'),
+    url('resources/fonts/GothamPro-Light.woff') format('woff'),
+    url('resources/fonts/GothamPro-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro Regular';
+    src: url('resources/fonts/GothamPro.eot');
+    src: url('resources/fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
+    url('resources/fonts/GothamPro.woff') format('woff'),
+    url('resources/fonts/GothamPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro Medium';
+    src: url('resources/fonts/GothamPro-Medium.eot');
+    src: url('resources/fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+    url('resources/fonts/GothamPro-Medium.woff') format('woff'),
+    url('resources/fonts/GothamPro-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro Black';
+    src: url('resources/fonts/GothamPro-Black.eot');
+    src: url('resources/fonts/GothamPro-Black.eot?#iefix') format('embedded-opentype'),
+    url('resources/fonts/GothamPro-Black.woff') format('woff'),
+    url('resources/fonts/GothamPro-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* ==============END OF FONTS================== */
+
+:root {
+    --main-bg-color: #FFFFFF;
+    --secondary-bg-color: #f9f9f9;
+    --main-dark-bg-color: #101823;
+    --secondary-dark-bg-color: #1e293a;
+    --main-color: #ff4654;
+    --main-white-color: #FFFFFF;
+}
+
+* {
+    outline: none;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    margin-top: 80px;
+}
+
+.m-0{margin:0!important}
+.mt-0,.my-0{margin-top:0!important}
+.mr-0,.mx-0{margin-right:0!important}
+.mb-0,.my-0{margin-bottom:0!important}
+.ml-0,.mx-0{margin-left:0!important}
+.m-1{margin:.25rem!important}
+.mt-1,.my-1{margin-top:.25rem!important}
+.mr-1,.mx-1{margin-right:.25rem!important}
+.mb-1,.my-1{margin-bottom:.25rem!important}
+.ml-1,.mx-1{margin-left:.25rem!important}
+.m-2{margin:.5rem!important}
+.mt-2,.my-2{margin-top:.5rem!important}
+.mr-2,.mx-2{margin-right:.5rem!important}
+.mb-2,.my-2{margin-bottom:.5rem!important}
+.ml-2,.mx-2{margin-left:.5rem!important}
+.m-3{margin:1rem!important}
+.mt-3,.my-3{margin-top:1rem!important}
+.mr-3,.mx-3{margin-right:1rem!important}
+.mb-3,.my-3{margin-bottom:1rem!important}
+.ml-3,.mx-3{margin-left:1rem!important}
+.m-4{margin:1.5rem!important}
+.mt-4,.my-4{margin-top:1.5rem!important}
+.mr-4,.mx-4{margin-right:1.5rem!important}
+.mb-4,.my-4{margin-bottom:1.5rem!important}
+.ml-4,.mx-4{margin-left:1.5rem!important}
+.m-5{margin:3rem!important}
+.mt-5,.my-5{margin-top:3rem!important}
+.mr-5,.mx-5{margin-right:3rem!important}
+.mb-5,.my-5{margin-bottom:3rem!important}
+.ml-5,.mx-5{margin-left:3rem!important}
+.p-0{padding:0!important}
+.pt-0,.py-0{padding-top:0!important}
+.pr-0,.px-0{padding-right:0!important}
+.pb-0,.py-0{padding-bottom:0!important}
+.pl-0,.px-0{padding-left:0!important}
+.p-1{padding:.25rem!important}
+.pt-1,.py-1{padding-top:.25rem!important}
+.pr-1,.px-1{padding-right:.25rem!important}
+.pb-1,.py-1{padding-bottom:.25rem!important}
+.pl-1,.px-1{padding-left:.25rem!important}
+.p-2{padding:.5rem!important}
+.pt-2,.py-2{padding-top:.5rem!important}
+.pr-2,.px-2{padding-right:.5rem!important}
+.pb-2,.py-2{padding-bottom:.5rem!important}
+.pl-2,.px-2{padding-left:.5rem!important}
+.p-3{padding:1rem!important}
+.pt-3,.py-3{padding-top:1rem!important}
+.pr-3,.px-3{padding-right:1rem!important}
+.pb-3,.py-3{padding-bottom:1rem!important}
+.pl-3,.px-3{padding-left:1rem!important}
+.p-4{padding:1.5rem!important}
+.pt-4,.py-4{padding-top:1.5rem!important}
+.pr-4,.px-4{padding-right:1.5rem!important}
+.pb-4,.py-4{padding-bottom:1.5rem!important}
+.pl-4,.px-4{padding-left:1.5rem!important}
+.p-5{padding:3rem!important}
+.pt-5,.py-5{padding-top:3rem!important}
+.pr-5,.px-5{padding-right:3rem!important}
+.pb-5,.py-5{padding-bottom:3rem!important}
+.pl-5,.px-5{padding-left:3rem!important}
+
+/* ==================ROOT VARS=================== */
+
+/* ----NAVBAR----- */
+
+.brand-logo {
+    padding: 0 50px;
+}
+
+.brand-logo path {
+    fill: var(--main-color);
+}
+
+.navbar.is-scrolling .brand-logo path {
+    fill: var(--main-dark-bg-color);
+}
+
+nav {
+    background-color: var(--main-dark-bg-color);
+    color: var(--main-white-color);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: all ease .3s;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+    font-family: "Gotham Pro Black", sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.navbar.is-scrolling {
+    background-color: var(--main-color);
+}
+
+.mobile-nav-links {
+
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.nav-links .nav-link {
+    list-style: none;
+    padding: 10px 25px;
+    transition: ease all .4s;
+
+}
+
+.nav-links .nav-link > a {
+    text-decoration: none;
+    color: var(--main-white-color);
+}
+
+.nav-links .nav-link:hover {
+    background-color: var(--secondary-dark-bg-color);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.input {
+    padding: 10px 30px;
+    border-radius: 9px;
+    font-family: "Gotham Pro Medium", serif;
+    border-color: transparent;
+}
+
+.input.bg-light {
+    color: var(--main-dark-bg-color);
+    background-color: var(--secondary-bg-color);
+}
+
+.input.bg-dark {
+    color: var(--main-white-color);
+    background-color: var(--secondary-dark-bg-color);
+}
+
+.input.search:before {
+    display: block;
+    content: ' ';
+    background-image: url('resources/svg/search-white.svg');
+    background-size: 28px 28px;
+    height: 28px;
+    width: 28px;
+}
+
+/* ---END NAVBAR--- */
+
+
+/* ----TITLES---- */
+
+.text-light {
+    color: var(--secondary-bg-color);
+}
+
+.text-dark {
+    color: var(--main-dark-bg-color);
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.title {
+    margin: .4rem;
+    font-family: 'Staatliches', sans-serif;
+    text-transform: uppercase;
+}
+
+h1.title {
+    font-size: 6rem;
+}
+
+h2.title {
+    font-size: 4rem;
+}
+
+h3.title {
+    font-size: 4rem;
+}
+
+p {
+    font-family: "Gotham Pro Light", sans-serif;
+}
+
+
+/* ---END TITLES--- */
+
+
+/* -----BLOCKS & DIVS----- */
+
+
+.top-illustration {
+    background-image: url('resources/imgs/background-1.jpg');
+    background-position: center;
+    width: 100vw;
+    height: 400px;
+}
+
+.centered-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
