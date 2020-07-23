@@ -9,8 +9,6 @@
         <link rel="icon" type="image/png" href="resources/imgs/favicon.png" />
         <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 
-        <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
-
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
@@ -24,49 +22,260 @@
                     </a>
 
                     <ul class="nav-links">
-                        <li class="nav-link">
-                            <a href="">Nos produits</a>
+                        <li class="nav-link dropdown">
+                            <a href="#">Arsenal</a>
+                            <ul>
+                                <li><a href="#bestSales">Vandal</a></li>
+                                <li><a href="#bestSales">Phantom</a></li>
+                                <li><a href="#bestSales">Spectre</a></li>
+                                <li><a href="#bestSales">Operator</a></li>
+                            </ul>
                         </li>
-                        <li class="nav-link">
-                            <a href="">Meilleurs ventes</a>
-                        </li>
-                        <li class="nav-link">
-                            <a href="">Nouveautés</a>
-                        </li>
-                        <li class="nav-link">
-                            <a href="">Promotions</a>
-                        </li>
-                        <li class="nav-link">
-                            <a href="">Nous contacter</a>
-                        </li>
-                        <li class="nav-link"><input class="input bg-dark" type="text" placeholder="Rechercher un produit"></li>
-                        <li class="nav-link"><i data-feather="search"></i></li>
-                        <li class="nav-link user"><i class="mr-2" data-feather="user"></i><i class="ml-2" data-feather="shopping-cart"></i></li>
+                        <li class="nav-link"><a href="">Meilleurs ventes</a></li>
+                        <li class="nav-link"><a href="">Nouveautés</a></li>
+                        <li class="nav-link"><a href="">Promotions</a></li>
+                        <li class="nav-link"><a href="">Nous contacter</a></li>
+                        <li class="nav-link"><input class="input search bg-dark" type="text" placeholder="Rechercher un produit"></li>
+                        <li class="nav-link user"><i data-feather="user"></i></li>
+                        <li class="nav-link user"><i data-feather="shopping-cart"></i></li>
                     </ul>
 
-                    <ul class="mobile-nav-links">
-
-                    </ul>
+                    <div class="mobile-nav-links">
+                        <div>
+                            <ul class="left">
+                                <li class="nav-link toggle-nav-menu"><i data-feather="grid"></i></li>
+                                <li class="nav-link"><i data-feather="search"></i></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="./">
+                                <svg class="brand-logo" xmlns="http://www.w3.org/2000/svg" fill="none" height="35" viewBox="0 0 100 100" width="35">
+                                    <path d="M99.25 48.66V10.28c0-.59-.75-.86-1.12-.39l-41.92 52.4a.627.627 0 00.49 1.02h30.29c.82 0 1.59-.37 2.1-1.01l9.57-11.96c.38-.48.59-1.07.59-1.68zM1.17 50.34L32.66 89.7c.51.64 1.28 1.01 2.1 1.01h30.29c.53 0 .82-.61.49-1.02L1.7 9.89c-.37-.46-1.12-.2-1.12.39v38.38c0 .61.21 1.2.59 1.68z" fill="#fff"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div>
+                            <ul>
+                                <li class="nav-link user"><i data-feather="user"></i></li>
+                                <li class="nav-link user"><i data-feather="shopping-cart"></i></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </nav>
         </header>
+
+        <div class="toggle-mobile-menu">
+            <div class="content">
+                <div class="close" id="close-toggle-menu">
+                    <i data-feather="x"></i>
+                </div>
+                <h2 class="title text-light text-center">Menu</h2>
+                <ul>
+                    <li class="nav-link">Arsenal</li>
+                    <li class="nav-link">Meilleures ventes</li>
+                    <li class="nav-link">Nouveautés</li>
+                    <li class="nav-link">Promotions</li>
+                    <li class="nav-link">Nous contacter</li>
+                </ul>
+            </div>
+        </div>
 
         <main>
             <section class="top-illustration centered-block">
                 <div class="text-center mt-5">
                     <h1 class="title text-light text-center">Bienvenue à toi, soldat</h1>
-                    <p class="text-center text-light">Si tu cherches des armes à ta taille, tu es au bon endroit.</p>
+                    <h4 class="title text-center text-light">Si tu cherches des armes à ta taille, tu es au bon endroit.</h4>
                 </div>
             </section>
 
-            <section class="best-sales pt-5">
+            <section id="bestSales" class="best-sales pt-5 mt-5">
                 <h2 class="title text-dark text-center">Meilleures ventes</h2>
+
+                <div class="best-sales-items pt-5">
+                    <article class="item">
+                        <div class="picture" style="background-image:url('resources/imgs/weapons/vandal.png'); filter: drop-shadow(1.5rem 2.2rem 0 rgba(15,25,35,.17));"></div>
+                        <div class="content">
+                            <div>
+                                <span class="title">Vandal</span>
+                            </div>
+                            <div class="price d-flex align-items-center">
+                                <img class="m-1" src="resources/svg/logo-valorant-credits.svg" alt="">
+                                <span>2 900</span>
+                            </div>
+                            <div>
+                                <span class="description">
+
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <div class="picture" style="background-image:url('resources/imgs/weapons/phantom.png'); filter: drop-shadow(1.5rem 2.2rem 0 rgba(15,25,35,.17));"></div>
+                        <div class="content">
+                            <div>
+                                <span class="title">Phantom</span>
+                            </div>
+                            <div class="price d-flex align-items-center">
+                                <img class="m-1" src="resources/svg/logo-valorant-credits.svg" alt="">
+                                <span>2 900</span>
+                            </div>
+                            <div>
+                                <span class="description">
+
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <div class="picture" style="background-image:url('resources/imgs/weapons/ghost.png'); filter: drop-shadow(1.5rem 2.2rem 0 rgba(15,25,35,.17));"></div>
+                        <div class="content">
+                            <div>
+                                <span class="title">Ghost</span>
+                            </div>
+                            <div class="price d-flex align-items-center">
+                                <img class="m-1" src="resources/svg/logo-valorant-credits.svg" alt="">
+                                <span>500</span>
+                            </div>
+                            <div>
+                                <span class="description">
+
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <div class="picture" style="background-image:url('resources/imgs/weapons/shorty.png'); filter: drop-shadow(1.5rem 2.2rem 0 rgba(15,25,35,.17));"></div>
+                        <div class="content">
+                            <div>
+                                <span class="title">Shorty</span>
+                            </div>
+                            <div class="price d-flex align-items-center">
+                                <img class="m-1" src="resources/svg/logo-valorant-credits.svg" alt="">
+                                <span>300</span>
+                            </div>
+                            <div>
+                                <span class="description">
+
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <div class="picture" style="background-image:url('resources/imgs/weapons/sheriff.png'); filter: drop-shadow(1.5rem 2.2rem 0 rgba(15,25,35,.17));"></div>
+                        <div class="content">
+                            <div>
+                                <span class="title">Sheriff</span>
+                            </div>
+                            <div class="price d-flex align-items-center">
+                                <img class="m-1" src="resources/svg/logo-valorant-credits.svg" alt="">
+                                <span>800</span>
+                            </div>
+                            <div>
+                                <span class="description">
+
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <div class="picture" style="background-image:url('resources/imgs/weapons/odin.png'); filter: drop-shadow(1.5rem 2.2rem 0 rgba(15,25,35,.17));"></div>
+                        <div class="content">
+                            <div>
+                                <span class="title">Odin</span>
+                            </div>
+                            <div class="price d-flex align-items-center">
+                                <img class="m-1" src="resources/svg/logo-valorant-credits.svg" alt="">
+                                <span>3 100</span>
+                            </div>
+                            <div>
+                                <span class="description">
+
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <div class="picture" style="background-image:url('resources/imgs/weapons/operator.png'); filter: drop-shadow(1.5rem 2.2rem 0 rgba(15,25,35,.17));"></div>
+                        <div class="content">
+                            <div>
+                                <span class="title">Operator</span>
+                            </div>
+                            <div class="price d-flex align-items-center">
+                                <img class="m-1" src="resources/svg/logo-valorant-credits.svg" alt="">
+                                <span>4 500</span>
+                            </div>
+                            <div>
+                                <span class="description">
+
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <div class="picture" style="background-image:url('resources/imgs/weapons/spectre.png'); filter: drop-shadow(1.5rem 2.2rem 0 rgba(15,25,35,.17));"></div>
+                        <div class="content">
+                            <div>
+                                <span class="title">Spectre</span>
+                            </div>
+                            <div class="price d-flex align-items-center">
+                                <img class="m-1" src="resources/svg/logo-valorant-credits.svg" alt="">
+                                <span>1 600</span>
+                            </div>
+                            <div>
+                                <span class="description">
+
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
             </section>
         </main>
+        
+        <footer>
+            <nav>
+                <svg class="brand-logo" xmlns="http://www.w3.org/2000/svg" fill="none" height="35" viewBox="0 0 100 100" width="35">
+                    <path d="M99.25 48.66V10.28c0-.59-.75-.86-1.12-.39l-41.92 52.4a.627.627 0 00.49 1.02h30.29c.82 0 1.59-.37 2.1-1.01l9.57-11.96c.38-.48.59-1.07.59-1.68zM1.17 50.34L32.66 89.7c.51.64 1.28 1.01 2.1 1.01h30.29c.53 0 .82-.61.49-1.02L1.7 9.89c-.37-.46-1.12-.2-1.12.39v38.38c0 .61.21 1.2.59 1.68z" fill="#fff"></path>
+                </svg>
+                <div>
+                    <h4 class="title">Nos produits</h4>
+                    <ul>
+                        <li class="nav-link">Vandal</li>
+                        <li class="nav-link">Phantom</li>
+                        <li class="nav-link">Spectre</li>
+                        <li class="nav-link">Operator</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="title">Liens rapides</h4>
+                    <ul>
+                        <li class="nav-link"><a href="">Meilleurs ventes</a></li>
+                        <li class="nav-link"><a href="">Nouveautés</a></li>
+                        <li class="nav-link"><a href="">Promotions</a></li>
+                        <li class="nav-link"><a href="">Nous contacter</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="title">Réseaux sociaux</h4>
+                    <ul>
+                        <li class="nav-link"><a href=""><i data-feather="twitter"></i> Twitter</a></li>
+                        <li class="nav-link"><a href=""><i data-feather="facebook"></i> Facebook</a></li>
+                        <li class="nav-link"><a href=""><i data-feather="youtube"></i> Youtube</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="bottom">
+                <ul>
+                    <li class="nav-link"><a href="">Mentions légales</a></li>
+                    <li class="nav-link"><a href="">CGV</a></li>
+                </ul>
+            </div>
+        </footer>
         <script>
-            feather.replace()
+            feather.replace();
         </script>
-        <script src=""></script>
+        <script src="resources/js/app.js"></script>
         <script src="resources/js/scroll.js"></script>
     </body>
 </html>
